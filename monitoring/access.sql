@@ -24,3 +24,5 @@ WHERE  a.sid    = b.sid
 AND    a.owner  = DECODE(UPPER('&1'), 'ALL', a.object, UPPER('&1'))
 AND    a.object = DECODE(UPPER('&2'), 'ALL', a.object, UPPER('&2'))
 ORDER BY a.object;
+
+-- this is a new line for the test purpose
